@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let count = 0;
+        function check() {
+            let x = prompt("nhập số lượng phần tử trong mảng");           
+            for (let i = 0; i < x; i++) {
+                arr[i] = prompt("nhập phần tử của mảng");
+            }
+             let n = prompt("nhập kí tự kiểm tra")
+            document.write(arr);
+
+            for (let i = 0; i < x; i++) {
+                if (arr[i] == n)
+                    count++
+            }
+            return count;
+        }
+        let ktra=check();
+        if(ktra==0)
+            alert("-1");
+        else    alert(ktra);
+        
+    </script>
+</body>
+
+</html>
